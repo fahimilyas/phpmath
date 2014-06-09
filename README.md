@@ -1,4 +1,4 @@
-https://travis-ci.org/fahimilyas/phpmath.svg?branch=master
+<img src="https://travis-ci.org/fahimilyas/phpmath.svg?branch=master" />
 
 phpmath
 =======
