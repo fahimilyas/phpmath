@@ -2,3 +2,7 @@ language: php
 
 php:
   - 5.3
+  
+notifications:
+  email:
+    - fahim@inbox.com
