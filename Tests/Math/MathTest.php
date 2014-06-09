@@ -10,6 +10,10 @@ class MathTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertTrue(true);
     }
+    public function testSubtract()
+    {
+        $this->assertTrue(false);
+    }
 
 }
 
