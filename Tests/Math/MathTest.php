@@ -8,7 +8,7 @@ class MathTest extends \PHPUnit_Framework_TestCase
 {
     public function testAdd()
     {
-        $this->asserTrue(true);
+        $this->assertTrue(true);
     }
 
 }
