@@ -3,9 +3,6 @@ language: php
 php:
   - 5.3
 
-script:
-  - bin/atoum --test-all  
-  
 notifications:
   email:
     - fahim@inbox.com
