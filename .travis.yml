@@ -4,8 +4,8 @@ php:
   - 5.4
 
 before_script:
- - wget http://getcomposer.org/composer.phar
- - php composer.phar install --dev --no-interaction
+ - composer install --dev --no-interaction
+ - wget https://scrutinizer-ci.com/ocular.phar 
 
 script:
  - mkdir -p build/logs
@@ -13,8 +13,11 @@ script:
  - vendor/bin/atoum --test-all
 
 after_script:
- - php vendor/bin/coveralls -v  
+  - php vendor/bin/coveralls -v
+  - php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.xml    
+    
 
 notifications:
   email:
     - fahim@inbox.com
+
