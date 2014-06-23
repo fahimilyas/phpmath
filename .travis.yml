@@ -5,12 +5,12 @@ php:
 
 before_script:
  - wget http://getcomposer.org/composer.phar
- - php composer.phar istall --dev --no-interaction
+ - php composer.phar install --dev --no-interaction
 
 script:
  - mkdir -p build/logs
  - phpunit --coverage-clover build/logs/clover.xml
- - bin/atoum --test-all
+ - vendor/bin/atoum --test-all
 
 after_script:
  - php vendor/bin/coveralls -v  
