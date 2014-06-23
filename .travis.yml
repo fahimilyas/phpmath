@@ -10,6 +10,7 @@ before_script:
 script:
  - mkdir -p build/logs
  - phpunit --coverage-clover build/logs/clover.xml
+ - bin/atoum --test-all
 
 after_script:
  - php vendor/bin/coveralls -v  
