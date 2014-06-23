@@ -10,7 +10,7 @@ before_script:
 script:
  - mkdir -p build/logs
  - phpunit --coverage-clover build/logs/clover.xml
- - vendor/bin/atoum --test-all
+
 
 after_script:
   - php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.xml    
