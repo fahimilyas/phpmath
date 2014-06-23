@@ -11,7 +11,7 @@ class MathTest extends \PHPUnit_Framework_TestCase
         require_once('/home/travis/build/fahimilyas/phpmath/src/FIMath.php');
         
         $result = FIMath::add(9,3);
-        $this->assertEquals($result, 11);
+        $this->assertEquals($result, 12);
     }
 }
 
