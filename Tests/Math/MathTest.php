@@ -8,7 +8,9 @@ class MathTest extends \PHPUnit_Framework_TestCase
 {
     public function testAdd()
     {
-        $this->assertTrue(true);
+        require_once('../../src/FIMath.php');
+        $result = FIMath::add(9,3);
+        $this->assertEquals($result, 12);
     }
 }
 
