@@ -1,11 +1,11 @@
 language: php
 
 php:
-  - 5.3
+  - 5.4
 
 before_script:
  - wget http://getcomposer.org/composer.phar
- - php composer.phar install --dev --no-interaction
+ - php composer.phar istall --dev --no-interaction
 
 script:
  - mkdir -p build/logs
